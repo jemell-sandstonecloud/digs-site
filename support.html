@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Help and contact for DIGS on iPhone, iPad, Android and Steam.">
+<title>DIGS Support</title>
+<style>
+  :root {
+    --bg: #f7f4ef; --card: #ffffff; --text: #1d1a17;
+    --muted: #5f5850; --line: #e3ddd4; --accent: #9a4f1c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161412; --card: #201d1a; --text: #f2ede7;
+      --muted: #b3aaa0; --line: #38332d; --accent: #eaa772;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 40rem; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 2rem; line-height: 1.15; margin: 0; }
+  h2 { font-size: 1.125rem; margin: 40px 0 12px; }
+  p, ul { margin: 8px 0; }
+  ul { padding-left: 1.25rem; }
+  li + li { margin-top: 6px; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+  .lede { color: var(--muted); margin-top: 8px; }
+  .card, details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; }
+  .card { padding: 16px 20px; }
+  .email { font-weight: 600; overflow-wrap: anywhere; }
+  details { margin: 8px 0; }
+  summary { cursor: pointer; font-weight: 600; padding: 14px 20px; }
+  details > div { padding: 0 20px 14px; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 0.875rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>DIGS Support</h1>
+    <p class="lede">Help with DIGS on iPhone, iPad, Android and Steam.</p>
+  </header>
+
+  <section aria-labelledby="contact">
+    <h2 id="contact">Contact us</h2>
+    <div class="card">
+      <p>Email <a class="email" href="mailto:support@sandstonecloud.com?subject=DIGS%20help">support@sandstonecloud.com</a></p>
+      <p>In the game, <strong>Settings → Help and contact</strong> opens an email with your app version already filled in. Tell us which device you play on. For a leaderboard question or a name to report, include the designer's name.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="faq">
+    <h2 id="faq">Questions</h2>
+
+    <details>
+      <summary>A purchase didn't arrive, or I reinstalled the game</summary>
+      <div>
+        <p>On iPhone, iPad and Android, open the <strong>Shop</strong> and tap <strong>Restore Purchases</strong> to bring back packs and other one-time purchases. After a reinstall they also come back on their own once the Shop connects to the store.</p>
+        <p>If a purchase is waiting for approval (Ask to Buy) or for a payment to clear, nothing is unlocked yet. It arrives by itself when the payment goes through.</p>
+        <p>If the Shop says <em>Store unavailable right now</em>, try again later. Coins still work in the meantime.</p>
+        <p>Payments are handled by the App Store or Google Play under their own terms, and we never see your payment details. On Steam everything is included, so there is nothing to buy or restore.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Where is my progress saved?</summary>
+      <div>
+        <p>DIGS saves your progress, designers and gallery automatically on your device. There is no DIGS account and no copy on our servers, so we can't recover or move progress for you.</p>
+        <ul>
+          <li>iPhone, iPad and Android: your progress is included in your device's own backup, if you use one.</li>
+                    <li>Steam: Steam Cloud keeps your save and gallery with your Steam account across your computers.</li>
+        </ul>
+        <p><strong>Settings → Reset progress</strong> starts the studio from scratch: stars, coins and your gallery go back to zero, along with anything bought with coins. Store purchases stay yours. There is no undo.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I delete my data?</summary>
+      <div>
+        <ul>
+          <li><strong>Leaderboards:</strong> Settings → <strong>Delete my leaderboard data</strong>, or turn off <strong>Show me on leaderboards</strong>. Your studio comes off every board and its anonymous leaderboard account is deleted. If you're offline, the game tries again each time it starts until it's done.</li>
+          <li><strong>Purchase data held by Unity:</strong> email us and we'll pass your request to Unity, which runs the purchase service.</li>
+          <li><strong>Everything on your device:</strong> delete the app. On Steam, also delete the <code>Sandstone/DIGS</code> folder (Windows: <code>AppData\LocalLow</code>; Mac: <code>~/Library/Application Support</code>).</li>
+        </ul>
+        <p>The full details are in the <a href="privacy.html">privacy policy</a>.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Which platforms is DIGS on?</summary>
+      <div>
+        <p>iPhone and iPad (App Store), Android (Google Play), and Windows and Mac (Steam).</p>
+        <p>Progress stays with the device or platform where you play; it doesn't move between platforms. Purchases belong to the store you made them in, and Restore Purchases works with that store.</p>
+      </div>
+    </details>
+  </section>
+
+  <footer>
+    <p>DIGS is made by Sandstone Cloud Solutions LLC · <a href="privacy.html">Privacy policy</a> · <a href="privacy.html#studio-rules">Studio rules</a></p>
+  </footer>
+</main>
+</body>
+</html>
